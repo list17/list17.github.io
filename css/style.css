@@ -1,0 +1,55 @@
+  /* CSS Document */
+.index {
+  font-family: "宋体";
+  color: #0000FF;
+  text-shadow: #00CCFF;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+/* 顶部横幅 */
+.head{
+  display: block;
+  height: 50px;
+  width: 80%;
+  padding-top:0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: linear-gradient(to right, red, blue);
+}
+
+
+/* 右边的状态栏 */
+
+.menu {
+  width: 10%;
+  height: 100%;
+  background: rgb(255, 160, 136);
+  padding-left: 1px;
+}
+
+.menu_li{
+    float:middle;
+    width:100%;
+    border-bottom: rgb(255, 0, 255) 2px solid;
+}
+
+.banner_a {
+  color: #000;
+  _webkit-transition: 0.5s;
+  _moz-transition: 0.5s;
+  _ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.banner_a:hover{
+  color:rgb(255, 72, 0);
+  border-right:2px solid;
+}
+
