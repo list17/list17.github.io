@@ -1,5 +1,15 @@
   /* CSS Document */
-.index {
+
+
+  *{
+    margin:0;
+    padding:0;
+    font-family:微软雅黑;
+    list-style:none;
+    text-decoration:none;
+  }
+
+  .index {
   font-family: "宋体";
   color: #0000FF;
   text-shadow: #00CCFF;
@@ -7,49 +17,88 @@
   padding-right: 8%;
 }
 
-/* 顶部横幅 */
-.head{
-  display: block;
-  height: 50px;
-  width: 80%;
-  padding-top:0px;
-  padding-left: 10%;
-  padding-right: 10%;
-  background: linear-gradient(to right, red, blue);
-}
 
+/* 状态栏毛玻璃质感 */
+/* .nagivation{
+  margin:0 auto;
+  padding:1em;
+  width: 100%;
+  background:hsla(0,0%,100%,.25) border-box;
+  overflow:hidden;
+  border-radius:.3em;
+  box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .5em 1em rgba(0,0,0,0.6);
+  text-shadow:0 1px 1px hsla(0,0%,100%,.3);
+  font-variant-ligatures:common-ligatures
+                          discretionary-ligatures
+                          historical-ligatures;
+} */
 
-/* 右边的状态栏 */
-
-.menu {
-  width: 10%;
-  height: 100%;
-  background: rgb(255, 160, 136);
-  padding-left: 1px;
+.ul-inline{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5%;
+  font-size: 0px;
 }
 
 .menu_li{
-    float:middle;
-    width:100%;
-    border-bottom: rgb(255, 0, 255) 2px solid;
+  width:100px;
+  border-bottom: grey 1px 70% solid;
 }
 
 .banner_a {
-  color: #000;
-  _webkit-transition: 0.5s;
-  _moz-transition: 0.5s;
-  _ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  border-radius: 10px;
+  border-top-left-radius: 5px;
+  background:transparent;
   transition: 0.5s;
   display: block;
   width: 100%;
   text-align: center;
-  height: 50px;
-  line-height: 50px;
+  font-size: 17px;
+  font-family: myFont;
+  color: white;
 }
 
 .banner_a:hover{
-  color:rgb(255, 72, 0);
-  border-right:2px solid;
+  border-bottom:blue 2px solid;
+  border-top:blue 2px solid;
+  background:transparent;
+  font-size: 20px;
 }
 
+.clrcle{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+
+span{
+  
+}
+
+iframe{
+  border: blue;
+  width: 100%;
+  height: 100%;
+}
+
+
+img{
+  height:100%;
+  width:100%;
+  overflow: hidden;
+  background-size:cover;
+}
+
+body{
+  background: #1d2027;
+}
+
+/* 添加字体 */
+@font-face
+{
+font-family: myFont;
+src: url('../css/font/基督山伯爵.TTF');
+}
