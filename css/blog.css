@@ -42,7 +42,7 @@
     /* margin-top: 50px; */
     margin: 100px auto;
     width: 70%;
-    height: 40%;
+    height: auto;
     background: url("../src/head.jpg") no-repeat;
 }
 
