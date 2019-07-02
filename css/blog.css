@@ -20,30 +20,6 @@
   padding-right: 8%;
 }
 
-  .index {
-  font-family: "宋体";
-  color: #0000FF;
-  text-shadow: #00CCFF;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-img{
-    width: 100%;
-    height: auto;
-    background-size:cover;
-  }
-  
-  body{
-    background: #1d2027;
-  }
-  
-  /* 添加字体 */
-  @font-face
-  {
-  font-family: myFont;
-  src: url('../css/font/基督山伯爵.TTF');
-  }
-
 .box{
     position:relative;
 	margin:0 auto;
@@ -142,3 +118,20 @@ img{
     cursor: pointer;
     background: #c38d35;
 }
+
+img{
+    width: 100%;
+    height: auto;
+    background-size:cover;
+  }
+  
+  body{
+    background: #1d2027;
+  }
+  
+  /* 添加字体 */
+  @font-face
+  {
+  font-family: myFont;
+  src: url('../css/font/基督山伯爵.TTF');
+  }
