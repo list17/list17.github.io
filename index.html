@@ -6,21 +6,58 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <ul class="ul-inline">
-        <li class="menu_li"><a class="banner_a" href="./profile.html" target="main">ABOUT<br/>我</a></li>
-        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main">BLOG<br/>日志</a></li>
-        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main">CONTENT<br/>联系我</a></li>
+    <ul class="ul-inline" id="navigator">
+        <li class="menu_li"><a class="banner_a" href="./profile.html" target="main" onclick="navi('nagivation');bar1('banner_a_change');image('head-circle_change')" id="bar1">ABOUT<br/>我</a></li>
+        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar2('banner_a_change')" id="bar2">BLOG<br/>日志</a></li>
+        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar3('banner_a_change')" id="bar3">CONTENT<br/>联系我</a></li>
     </ul>
-    <div class="head-circle">
-        <div class="circle"></div>
-        <div class="brief">
+    <div class="head-circle" id="image">
+        <div class="circle" ></div>
+        <div class="brief" id="brief">
             <p>大家好<br/>我喜欢唱、跳、rap和篮球<br/>music</p>
         </div>
+        <div>
+            <iframe name="main" id="iframe1" class="iframe1"></iframe>
+        </div>
     </div>
+    
 </body>
-
-
 <script>
+function navi(css){
+    document.getElementById("navigator").classList.add(css); 
+}
+function bar1(css){
+    document.getElementById("bar1").classList.add(css);
+    document.getElementById("bar2").classList.remove(css);
+    document.getElementById("bar3").classList.remove(css);
+}
+function bar2(css){
+    document.getElementById("bar2").classList.add(css);
+    document.getElementById("bar1").classList.remove(css);
+    document.getElementById("bar3").classList.remove(css);
+}
+function bar3(css){
+    document.getElementById("bar3").classList.add(css);
+    document.getElementById("bar1").classList.remove(css);
+    document.getElementById("bar2").classList.remove(css);
+}
 
+function image(css){
+    if (!document.getElementById("image").classList.contains(css)) {
+        document.getElementById("image").classList.toggle(css);
+        document.getElementById("brief").classList.toggle("brief_change");
+        document.getElementById("iframe1").classList.toggle("iframe1_change");
+        this.changeFrameHeight();
+    }   
+}
+
+function changeFrameHeight(){
+        var ifm= document.getElementById("iframe1"); 
+        ifm.height=document.documentElement.clientHeight;
+}
+
+window.onresize=function(){  
+    changeFrameHeight();  
+}
 </script>
 </html>
