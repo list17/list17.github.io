@@ -6,10 +6,10 @@
         </head>
     <body>
         <div class="nagivator">
-            <a class="button">相册</a>
-            <a class="button">收藏夹</a>
+            <a class="button" onclick="album()">相册</a>
+            <a class="button" onclick="favorite()">收藏夹</a>
         </div>
-        <div class="album">
+        <div class="album" id="album">
             <div class="line">
                 <div class="img_card"><img src="./src/album1.jpg"></div>
                 <div class="img_card"><img src="./src/album2.jpg"></div>
@@ -21,5 +21,19 @@
                 <div class="img_card"><img src="./src/album6.png"></div>
             </div>
         </div>
+        <div class="favorite_init" id="favorite">
+            <p class="favorite_text">这个页面还未完成( •̀ ω •́ )y</p>
+        </div>
+        <script>
+        function album(){
+            document.getElementById("album").classList.replace("album_hidden","album");            
+            document.getElementById("favorite").classList.replace("favorite","favorite_init");
+        }
+        
+        function favorite(){
+            document.getElementById("album").classList.replace("album","album_hidden");            
+            document.getElementById("favorite").classList.replace("favorite_init","favorite");
+        }
+        </script>
     </body>
 </html>
