@@ -7,13 +7,19 @@
 </head>
 <body>
     <ul class="ul-inline" id="navigator">
+        <li class="return_index_init" id="return_index"  onclick="index('head-circle_change')">返回</li>
         <li class="menu_li"><a class="banner_a" href="./profile.html" target="main" onclick="navi('nagivation');bar1('banner_a_change');image('head-circle_change')" id="bar1">ABOUT<br/>我</a></li>
-        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar2('banner_a_change')" id="bar2">BLOG<br/>日志</a></li>
-        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar3('banner_a_change')" id="bar3">CONTENT<br/>联系我</a></li>
+        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar2('banner_a_change');image('head-circle_change')" id="bar2">BLOG<br/>日志</a></li>
+        <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar3('banner_a_change');image('head-circle_change')" id="bar3">CONTENT<br/>联系我</a></li>
     </ul>
     <div class="head-circle" id="image">
-        <div>
+        <div id="left_blank"></div>
+        <div id="leftbanner">
             <div class="circle" ></div>
+            <div class="left_intro" id="left_intro">
+                <p>李胜涛</p><br/>
+                <p>清华大学软件学院72班学生</p>
+            </div>
         </div>
         <div class="brief" id="brief">
             <p style="font-size: 0px"><p style="font-size: 25px">大家好</p><br/><p style="font-size: 30px">我喜欢唱、跳、rap和篮球</p><br/><p style="font-size:20px">music</p></p>
@@ -46,10 +52,32 @@ function bar3(css){
 
 function image(css){
     if (!document.getElementById("image").classList.contains(css)) {
+        document.getElementById("leftbanner").classList.add("left_banner");
+        document.getElementById("left_intro").classList.toggle("left_intro_change");
         document.getElementById("image").classList.toggle(css);
         document.getElementById("brief").classList.toggle("brief_change");
         document.getElementById("iframe1").classList.toggle("iframe1_change");
+        document.getElementById("left_blank").classList.add("left_blank");
+        document.getElementById("return_index").classList.add("return_index");
         this.changeFrameHeight();
+    }   
+}
+
+function index(css){
+    if (document.getElementById("image").classList.contains(css)) {
+        document.getElementById("navigator").classList.add("banner_a_change"); 
+
+        document.getElementById("leftbanner").classList.remove("left_banner");
+        document.getElementById("left_intro").classList.remove("left_intro_change");
+        document.getElementById("image").classList.remove(css);
+        document.getElementById("brief").classList.remove("brief_change");
+        document.getElementById("iframe1").classList.remove("iframe1_change");
+        document.getElementById("left_blank").classList.remove("left_blank");
+        document.getElementById("bar1").classList.remove("banner_a_change");
+        document.getElementById("bar2").classList.remove("banner_a_change");
+        document.getElementById("bar3").classList.remove("banner_a_change");
+        document.getElementById("return_index").classList.remove("return_index");
+        document.getElementById("return_index").classList.add("return_index_init");
     }   
 }
 

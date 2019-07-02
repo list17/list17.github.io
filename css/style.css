@@ -39,7 +39,7 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 3%;
   font-size: 0px;
 }
 
@@ -55,7 +55,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: myFont;
   color: white;
 }
@@ -63,7 +63,7 @@
 .banner_a:hover{
   border-bottom:#1d2027 2px solid;
   background:transparent;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .banner_a_change{
@@ -73,6 +73,23 @@
 
   border-bottom-left-radius: 0%;
   border-bottom-right-radius: 0%;
+}
+
+.return_index_init{
+  display: none;
+}
+
+.return_index{
+  width:100px;
+  border-bottom: grey 1px 70% solid;
+  border-radius: 10px;
+  background:transparent;
+  transition: 0.5s;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-family: myFont;
+  color: white;
 }
 
 /* 头像部分 及下面的文字说明*/
@@ -88,7 +105,7 @@
 .head-circle_change{
   display: flex;
   justify-content:space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 }
 
@@ -128,6 +145,33 @@
   background-color: #0000FF;
   margin-left: 30px;
   border: 0px;
+}
+
+
+/* 左侧介绍栏 */
+.left_banner{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left_intro{
+  display: none;
+}
+
+.left_intro_change{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.left_blank{
+  width: 10%;
+  height:100%;
+  background:transparent;
 }
 
 
