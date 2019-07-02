@@ -50,13 +50,12 @@
 
 .banner_a {
   border-radius: 10px;
-  border-top-left-radius: 5px;
   background:transparent;
   transition: 0.5s;
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 17px;
+  font-size: 25px;
   font-family: myFont;
   color: white;
 }
@@ -69,7 +68,11 @@
 
 .banner_a_change{
   background: #1d2027;
-  border-radius: 0%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
 }
 
 /* 头像部分 及下面的文字说明*/
@@ -144,4 +147,4 @@ body{
 {
 font-family: myFont;
 src: url('../css/font/基督山伯爵.TTF');
-}
+}bv  
