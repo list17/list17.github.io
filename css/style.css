@@ -170,7 +170,7 @@
 
 /* 左边空白 */
 .left_blank{
-  width: 10%;
+  width: 5%;
   height:100%;
   background:transparent;
 }
@@ -178,6 +178,12 @@
 /* 左边竖线 */
 .left_line_init{
   display: none;
+}
+
+.hr_right{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .left_line{
