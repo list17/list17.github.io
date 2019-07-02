@@ -7,7 +7,10 @@
     font-family:myFont;
     list-style:none;
     text-decoration:none;
-    overflow: hidden;
+  }
+
+  html {
+    overflow: auto;
   }
 
   .index {
@@ -41,21 +44,34 @@
 
 .album{
     display: flex;
-    display: row;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
 }
 
 .album_hidden{
     display: none;
 }
 
-.row{
+.line{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.img_card{
+  display: flex;
+  align-items:center; 
+	justify-content:center;
+   width: 400px;
+   height: auto;
+  padding: 20px; 
 }
 
 img{
-  width:40%;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
   background-size:cover;
 }
 
