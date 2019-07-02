@@ -7,7 +7,7 @@
 </head>
 <body>
     <ul class="ul-inline" id="navigator">
-        <li class="return_index_init" id="return_index"  onclick="index('head-circle_change')">返回</li>
+        <li class="return_index_init" id="return_index"  onclick="index('head-circle_change')"><img src="./src/return.jpg"/></li>
         <li class="menu_li"><a class="banner_a" href="./profile.html" target="main" onclick="navi('nagivation');bar1('banner_a_change');image('head-circle_change')" id="bar1">ABOUT<br/>我</a></li>
         <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar2('banner_a_change');image('head-circle_change')" id="bar2">BLOG<br/>日志</a></li>
         <li class="menu_li"><a class="banner_a" href="./blog.html" target="main" onclick="navi('nagivation');bar3('banner_a_change');image('head-circle_change')" id="bar3">CONTENT<br/>联系我</a></li>
@@ -17,10 +17,24 @@
         <div id="leftbanner">
             <div class="circle" ></div>
             <div class="left_intro" id="left_intro">
-                <p>李胜涛</p><br/>
-                <p>清华大学软件学院72班学生</p>
+                <p class="intro_text">李胜涛</p><br/>
+                <p class="intro_text">清华大学软件学院72班学生</p><br/>
+                <hr style="height:0px;background:white;padding-right: 0px;width: 100%"/>
+                <br>
+                <p class="intro_text" style="text-align: left">个人签名：</p>
+                <br/>
+                <p class="intro_text" style="font-size: 15px">愿你走出半生<br/>归来仍是少年</p>
+                <br/>
+                <hr style="height:0px;background:white;padding-right: 0px;width: 100%"/>
+                <br>
+                <div class="intro_text"><p style="text-align: left">个人爱好：</p><br/>唱、跳、rap、篮球</div>
+                <br/>
+                <hr style="height:0px;background:white;padding-right: 0px;width: 100%"/>
+                <br>
+                <div class="intro_text"><p style="text-align: left">个人介绍：</p><br>来自河北邢台，高中就读于衡中，现在清华大学垃圾一个。请大家多多指教。<br></div>
             </div>
         </div>
+        <div class="left_line_init" id="left_line"></div>
         <div class="brief" id="brief">
             <p style="font-size: 0px"><p style="font-size: 25px">大家好</p><br/><p style="font-size: 30px">我喜欢唱、跳、rap和篮球</p><br/><p style="font-size:20px">music</p></p>
         </div>
@@ -59,14 +73,14 @@ function image(css){
         document.getElementById("iframe1").classList.toggle("iframe1_change");
         document.getElementById("left_blank").classList.add("left_blank");
         document.getElementById("return_index").classList.add("return_index");
+        document.getElementById("left_line").classList.replace("left_line_init","left_line");
         this.changeFrameHeight();
     }   
 }
 
 function index(css){
     if (document.getElementById("image").classList.contains(css)) {
-        document.getElementById("navigator").classList.add("banner_a_change"); 
-
+        document.getElementById("navigator").classList.remove("nagivation"); 
         document.getElementById("leftbanner").classList.remove("left_banner");
         document.getElementById("left_intro").classList.remove("left_intro_change");
         document.getElementById("image").classList.remove(css);
@@ -78,6 +92,7 @@ function index(css){
         document.getElementById("bar3").classList.remove("banner_a_change");
         document.getElementById("return_index").classList.remove("return_index");
         document.getElementById("return_index").classList.add("return_index_init");
+        document.getElementById("left_line").classList.replace("left_line","left_line_init");
     }   
 }
 
