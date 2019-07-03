@@ -203,6 +203,7 @@ img{
 }
 
 body{
+  min-width: 1500px;
   background: #1d2027;
 }
 
