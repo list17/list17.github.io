@@ -12,6 +12,25 @@
     overflow: auto;
   }
 
+  .nagivator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    color:white;
+    font-size:18px;
+    width: 30%;
+}
+.button{
+    display:block;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background: #c38d35;
+    cursor: pointer;
+}
   .index {
   font-family: "宋体";
   color: #0000FF;
@@ -72,7 +91,7 @@
     font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
-
+    text-indent: 2em;
 }
 
 .details_hidden{
@@ -90,12 +109,15 @@
     font-size: 15px;
     color: white;
     text-indent: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .details_box{
     position:relative;
 	margin:0 auto;
     height: 100%;
+    padding-bottom: 2em;
 	background:grey border-box;
 	border-radius:.3em;
 	box-shadow:0 0 0 1px rgba(211, 134, 20, 0.25)inset,0 .5em 1em rgba(0,0,0,0.6);

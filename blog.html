@@ -6,6 +6,9 @@
             <link rel="stylesheet" href="./css/blog.css">
     </head>
     <body>
+        <div class="nagivator">
+            <a class="button" onclick="album()">创建日志</a>
+        </div>
         <div class="main">
             <div class="backimg" onclick="content()" id="box1">
                 <div class="box">
@@ -23,9 +26,9 @@
                     <hr>
                     <br/>
                     <p>
-                        <p class='text'>	对于前后端的开发，最早是在大一的一个选修课上了解的，但是当时老师一直在讲一些在
+                        <p class='text'>	对于前端的开发，最早是在大一的一个选修课上了解的，但是当时老师一直在讲一些在
                                 如今看来已经古老无比的开发技术来开发前端，导致自己一度认为前端毫无技术可言
-                                -在Dreamwawer里面拖动组件，做出来奇丑无比还不变交互，也是直到后来才慢慢的对前端有了一些了解。
+                                -在Dreamwawer里面拖动组件，做出来奇丑无比还不便交互，也是直到后来才慢慢的对前端有了一些了解。
                             </p>
                             <br/>
                             <p class='text'>大二上学期的图论大作业，当时
@@ -57,6 +60,9 @@
         function returnlist(){
             document.getElementById("box1").classList.replace("backimg_hidden","backimg");
             document.getElementById("details1").classList.replace("details","details_hidden");
+        }
+        function album(){
+            alert("该功能还未完成");
         }
         </script>
     </body>

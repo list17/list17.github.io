@@ -6,6 +6,7 @@
     font-family:myFont;
     list-style:none;
     text-decoration:none;
+    vertical-align: middle;
   }
   
   html {
@@ -13,17 +14,46 @@
   }
 
 
-img{
-    width: 100%;
-    height: auto;
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .contact span{
+    font-family: myFont;
+    font-size: 15px;
+    color: white;
+    height: 100%;
+  }
+
+.line{
+  margin: 15px auto;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.left_blank{
+  width: 5%;
+  height:100%;
+  background:transparent;
+}
+
+  img{
+    width: auto;
     background-size:cover;
     background-repeat: no-repeat;
+    width:35px;
+    height: auto;
   }
   
   body{
     background: #1d2027;
   }
   
+
   /* 添加字体 */
   @font-face
   {
