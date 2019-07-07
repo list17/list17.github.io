@@ -1,69 +1,199 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <meta charset="utf-8">
-            <title>list</title>
-            <link rel="stylesheet" href="./css/blog.css">
-    </head>
-    <body>
-        <div class="nagivator">
-            <a class="button" onclick="album()">创建日志</a>
-        </div>
-        <div class="main">
-            <div class="backimg" onclick="content()" id="box1">
-                <div class="box">
-                    <p class="title">课程感悟</p><br/>
-                    <p class="date">2019年7月3号凌晨</p>
-                    <hr><br/>
-                    <p class='preview'>	对于前后端的开发，最早是在大一的一个选修课上了解的，但是当时老师一直在讲一些在如今看来已经古老无比的开发技术来开发前端，导致自己一度认为前端毫无技术可言-在Dreamwawer里面拖动组件，做出来奇丑无比还不变交互，也是直到后来才慢慢的对前端有了一些了解。
-                            大二上学期的图论大作业......</p>
-                </div>
-            </div>
-            <div class="details_hidden" id="details1">            
-                <div class="details_box">
-                    <p class="title">课程感悟</p><br/>
-                    <p class="date">2019年7月3号凌晨</p>
-                    <hr>
-                    <br/>
-                    <p>
-                        <p class='text'>	对于前端的开发，最早是在大一的一个选修课上了解的，但是当时老师一直在讲一些在
-                                如今看来已经古老无比的开发技术来开发前端，导致自己一度认为前端毫无技术可言
-                                -在Dreamwawer里面拖动组件，做出来奇丑无比还不便交互，也是直到后来才慢慢的对前端有了一些了解。
-                            </p>
-                            <br/>
-                            <p class='text'>大二上学期的图论大作业，当时
-                                采用了django加d3js来进行开发，界面也较为简单，后端功能也较为一般（最严重的是当时将c++
-                                的一个程序扔进了一个后端响应函数但没有用多线程，导致它在大多数时候像是崩溃了一般），对于前端这部分感
-                                觉不像是以前那种低级的开发，但是重点还是在后端。
-                                            之后由于软院科协的赛事部举行了一场AI比赛，我负责开发后端（但是前端也没少看），前端这次
-                                            采用了vue.js 加element-ui，我也是第一次感觉到了前端开发也不是那么简单，也同时了解到了更多的框架和各种各样的
-                                            ui。也才算是正式的对前端有了了解。
-                            </p>
-                            <br/>
-                            <p class="text">对于这门课希望自己能够真正用学到的前端技术开
-                                发出一个自己所希望的网站，而不是像起初那样将重点放在以完成为主。也希望助教和老师能够多提供一些利于开发
-                                的架构或着是一些便于学习的资料。
-                            </p>
-                    </p>
-                </div>
-                <div class="return" onclick="returnlist()">
-                    返回
-                </div>
-            </div>
-        </div>
 
-        <script>
-        function content(){
-            document.getElementById("box1").classList.replace("backimg","backimg_hidden");
-            document.getElementById("details1").classList.replace("details_hidden","details");
+<head>
+    <meta charset="utf-8">
+    <title>list</title>
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+
+<body>
+    <div class="nagivator">
+        <a class="button" onclick="album()">创建日志</a>
+    </div>
+    <div class='blog'>
+        <div class="backimg" onclick="content()" id="box1">
+            <div class="box">
+                <p class="title">课程感悟</p><br/>
+                <p class="date">2019年7月3号凌晨</p>
+                <hr><br/>
+                <p class='preview'> 对于前后端的开发，最早是在大一的一个选修课上了解的，但是当时老师一直在讲一些在如今看来已经古老无比的开发技术来开发前端，导致自己一度认为前端毫无技术可言-在Dreamwawer里面拖动组件，做出来奇丑无比还不变交互，也是直到后来才慢慢的对前端有了一些了解。 大二上学期的图论大作业......
+                </p>
+            </div>
+        </div>
+        <div class="details_hidden" id="details1">
+            <div class="details_box">
+                <p class="title">课程感悟</p><br/>
+                <p class="date">2019年7月3号凌晨</p>
+                <hr>
+                <br/>
+                <p>
+                    <p class='text'> 对于前端的开发，最早是在大一的一个选修课上了解的，但是当时老师一直在讲一些在 如今看来已经古老无比的开发技术来开发前端，导致自己一度认为前端毫无技术可言 -在Dreamwawer里面拖动组件，做出来奇丑无比还不便交互，也是直到后来才慢慢的对前端有了一些了解。
+                    </p>
+                    <br/>
+                    <p class='text'>大二上学期的图论大作业，当时 采用了django加d3js来进行开发，界面也较为简单，后端功能也较为一般（最严重的是当时将c++ 的一个程序扔进了一个后端响应函数但没有用多线程，导致它在大多数时候像是崩溃了一般），对于前端这部分感 觉不像是以前那种低级的开发，但是重点还是在后端。 之后由于软院科协的赛事部举行了一场AI比赛，我负责开发后端（但是前端也没少看），前端这次 采用了vue.js 加element-ui，我也是第一次感觉到了前端开发也不是那么简单，也同时了解到了更多的框架和各种各样的
+                        ui。也才算是正式的对前端有了了解。
+                    </p>
+                    <br/>
+                    <p class="text">对于这门课希望自己能够真正用学到的前端技术开 发出一个自己所希望的网站，而不是像起初那样将重点放在以完成为主。也希望助教和老师能够多提供一些利于开发 的架构或着是一些便于学习的资料。
+                    </p>
+                </p>
+            </div>
+            <div class="return" onclick="returnlist()">
+                返回
+            </div>
+        </div>
+        <div class="backimg" onclick="content_2()" id="box2">
+            <div class="box">
+                <p class="title">第一次作业</p><br/>
+                <p class="date">2019年7月7号下午</p>
+                <hr><br/>
+                <p class='preview'> 1、 第一题较为简单，利用Date().getTime()，若是两个时间差小于等于0，那么延迟天数为0，否则除以86400000向下取整加一便可以得到延迟天数。......
+                </p>
+            </div>
+        </div>
+        <div class="details_hidden" id="details2">
+            <div class="details_box">
+                <p class="title">第一次作业</p><br/>
+                <p class="date">2019年7月7号下午</p>
+                <hr>
+                <br/>
+                <p>
+                    <p class='text'> 1、 第一题较为简单，利用Date().getTime()，若是两个时间差小于等于0，那么延迟天数为0，否则除以86400000向下取整加一便可以得到延迟天数。
+                    </p>
+                    <br/>
+                    <p class='text'>2、 这道题我采用的较为复杂，在这里写一个简单思路，利用递归函数在constructor里面构造出这个数组，之后的next_value()以及has_next()只需要读取该数组便可，利用递归函数先序遍历一个树较为简单。也可以使用栈结构进行遍历。自己的方法过于麻烦了，也是使用栈结构。在这里同样附上大佬的generator方法：
+                    </p>
+                    <pre><code>
+    'use strict';
+
+    class TreeIterator {
+        constructor(tree) {
+            function* gen(node) {
+                yield node.val
+                for (let child of node.children)
+                    yield* gen(child);
+            }
+            this.iter = gen(tree);
+            this.curr = this.iter.next();
         }
-        function returnlist(){
-            document.getElementById("box1").classList.replace("backimg_hidden","backimg");
-            document.getElementById("details1").classList.replace("details","details_hidden");
+        has_next() {
+            return !this.curr.done;
         }
-        function album(){
+        next_value() {
+            const value = this.curr.value;
+            this.curr = this.iter.next();
+            return value;
+        }
+    }
+</code></pre>
+                    <br/>
+                    <p class="text">3、 第三题利用递归较为简单，如果检测到该元素为array便继续执行该函数，否则只需要将其×2即可。
+                    </p>
+                    <br/>
+                    <p class="text">4、 第5题，利用栈结构并不难，难点在如何解析该字符串，在自己进行了一大串的特殊情况处理之后，看到了同寝室高年级学长（大佬）的代码感觉自己的就是一堆垃圾。 附代码：</p>
+                    <pre><code>
+    'use strict';
+
+    function operatorDefinition(definition, expression) {
+        const variables = {
+            x: (a, b) => a,
+            y: (a, b) => b,
+        }
+        const left = variables[definition[0]],
+                right = variables[definition[2]];
+        const operators = {
+            '+': (a, b) => left(a, b) + right(a, b),
+            '-': (a, b) => left(a, b) - right(a, b),
+            '*': (a, b) => left(a, b) * right(a, b),
+            '/': (a, b) => Math.floor(left(a, b) / right(a, b)),
+        }
+        const operator = operators[definition[1]];
+
+        /*
+            * Grammar:
+            * 
+            * parseAtom
+            *   = '(' parseExpr ')'
+            *   | [0-9]+
+            * 
+            * parseExpr
+            *   = parseAtom ('&' parseAtom)?
+            */
+        function parseAtom(index) {
+            if (expression[index] === '(') {
+                let value;
+                [value, index] = parseExpr(index + 1);
+                if (expression[index] === ')')
+                    return [value, index + 1];
+                else
+                    return [NaN, index];
+            } else if (expression[index] >= '0' && expression[index] <= '9') {
+                let num = 0;
+                while (expression[index] >= '0' && expression[index] <= '9') {
+                    num = num * 10 + (expression[index] - '0');
+                    ++index;
+                }
+                return [num, index];
+            } else
+                return vbcx NaN, index];
+        }
+        
+        function parseExpr(index) {
+            let value;
+            [value, index] = parseAtom(index);
+            while (expression[index] === '&') {
+                let other;
+                [other, index] = parseAtom(index + 1)
+                value = operator(value, other);
+            }
+            return [value, index];
+        }
+
+        const result = parseExpr(0);
+        return '' + (result[1] === expression.length ? result[0] : NaN);
+    }
+
+    module.exports = operatorDefinition;
+</code></pre>
+                    <p class="text">自己的代码近200行，里面多数是特殊情况处理。
+                    </p>
+
+            </div>
+            <div class="return" onclick="returnlist()">
+                返回
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function content() {
+            document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("details1").classList.replace("details_hidden", "details");
+            parent.resizeIframe(parent.document.getElementById("iframe1"));
+        }
+
+        function content_2() {
+            document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("details2").classList.replace("details_hidden", "details");
+            parent.resizeIframe(parent.document.getElementById("iframe1"));
+        }
+
+        function returnlist() {
+            document.getElementById("box1").classList.replace("backimg_hidden", "backimg");
+            document.getElementById("box2").classList.replace("backimg_hidden", "backimg");
+            document.getElementById("details1").classList.replace("details", "details_hidden");
+            document.getElementById("details2").classList.replace("details", "details_hidden");
+            parent.resizeIframe(parent.document.getElementById("iframe1"));
+        }
+
+        function album() {
             alert("该功能还未完成");
         }
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>

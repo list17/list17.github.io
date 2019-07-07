@@ -1,111 +1,112 @@
 /* CSS Document */
 
-*{
-    margin:0;
-    padding:0;
-    font-family:myFont;
-    list-style:none;
-    text-decoration:none;
-  }
-  
-  html {
-    overflow: auto;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    list-style: none;
+    text-decoration: none;
+}
 
-  .nagivator{
+html {
+    overflow: auto;
+}
+
+.nagivator {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 20px;
-    color:white;
-    font-size:18px;
+    color: white;
+    font-size: 18px;
     width: 30%;
 }
-.button{
-    display:block;
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.button {
+    display: block;
     background: transparent;
     transition: 0.3s;
 }
 
-.button:hover{
+.button:hover {
     background: #c38d35;
     cursor: pointer;
 }
-  .index {
-  font-family: "宋体";
-  color: #0000FF;
-  text-shadow: #00CCFF;
-  padding-left: 8%;
-  padding-right: 8%;
+
+.index {
+    font-family: "宋体";
+    color: #0000FF;
+    text-shadow: #00CCFF;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.main{
-    height: 1000px;
-}
-
-.box{
-    position:relative;
-	margin:0 auto;
+.box {
+    position: relative;
+    margin: 0 auto;
     height: 100%;
-	background:hsla(0,0%,100%,.25) border-box;
-	border-radius:.3em;
-	box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .5em 1em rgba(0,0,0,0.6);
-	text-shadow:0 1px 1px hsla(0,0%,100%,.3);
-    font-variant-ligatures:common-ligatures
-                                    discretionary-ligatures
-                                    historical-ligatures;
+    background: hsla(0, 0%, 100%, .25) border-box;
+    border-radius: .3em;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px hsla(0, 0%, 100%, .3);
+    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
 }
 
-
-.backimg{
+.backimg {
     /* margin-top: 50px; */
-    margin: 100px auto;
+    margin: 50px auto;
     width: 70%;
     height: auto;
     background: url("../src/head.jpg") no-repeat;
 }
 
-.backimg:hover{
+.backimg:hover {
     cursor: pointer;
 }
 
-.backimg_hidden{
+.backimg_hidden {
     display: none;
 }
 
-.title{
-    font-family:myFont;
+.title {
+    font-family: myFont;
     font-size: 25px;
     text-align: left;
     padding-top: 10px;
     padding-left: 20px;
 }
 
-.date{
+.date {
     font-size: 13px;
     text-align: left;
     padding-left: 40px;
 }
 
-.preview{
+.preview {
     font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
     text-indent: 2em;
 }
 
-.details_hidden{
+.details_hidden {
     display: none;
 }
 
-.details{
-    display: block;
+.details {
+    display: flex;
+    flex-direction: column;
     margin: 100px auto;
-    width: 70%;
     height: auto;
 }
 
-.text{
+.text {
     font-size: 15px;
     color: white;
     text-indent: 2em;
@@ -113,52 +114,51 @@
     padding-right: 1em;
 }
 
-.details_box{
-    position:relative;
-	margin:0 auto;
+.details_box {
+    position: relative;
+    margin: 0 auto;
     height: 100%;
     padding-bottom: 2em;
-	background:grey border-box;
-	border-radius:.3em;
-	box-shadow:0 0 0 1px rgba(211, 134, 20, 0.25)inset,0 .5em 1em rgba(0,0,0,0.6);
-	text-shadow:0 1px 1px rgba(211, 134, 20, 0.25);
-    font-variant-ligatures:common-ligatures
-                                    discretionary-ligatures
-                                    historical-ligatures;
+    background: grey border-box;
+    border-radius: .3em;
+    box-shadow: 0 0 0 1px rgba(211, 134, 20, 0.25)inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px rgba(211, 134, 20, 0.25);
+    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
 }
 
-.return{
+.return {
     margin-top: 4px;
     margin-left: 85%;
-    width:10%;
+    width: 10%;
     font-size: 30px;
     text-align: center;
     color: white;
     font-family: 微软雅黑;
     border-radius: 5px;
     transition: 0.3s;
-    background:transparent;
+    background: transparent;
 }
 
-.return:hover{
+.return:hover {
     cursor: pointer;
     background: #c38d35;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-  }
-  
-  body{
+}
+
+body {
     background: #1d2027;
-  }
-  
-  /* 添加字体 */
-  @font-face
-  {
-  font-family: myFont;
-  src: url('../css/font/基督山伯爵.TTF');
-  }
+}
+
+
+/* 添加字体 */
+
+@font-face {
+    font-family: myFont;
+    src: url('../css/font/基督山伯爵.TTF');
+}
