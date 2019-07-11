@@ -45,7 +45,7 @@
         </div>
         <div class="backimg" onclick="content_2()" id="box2">
             <div class="box">
-                <p class="title">第一次作业</p><br/>
+                <p class="title">第二次作业</p><br/>
                 <p class="date">2019年7月7号下午</p>
                 <hr><br/>
                 <p class='preview'> 1、 第一题较为简单，利用Date().getTime()，若是两个时间差小于等于0，那么延迟天数为0，否则除以86400000向下取整加一便可以得到延迟天数。......
@@ -54,7 +54,7 @@
         </div>
         <div class="details_hidden" id="details2">
             <div class="details_box">
-                <p class="title">第一次作业</p><br/>
+                <p class="title">第二次作业</p><br/>
                 <p class="date">2019年7月7号下午</p>
                 <hr>
                 <br/>
@@ -164,13 +164,53 @@
                 返回
             </div>
         </div>
+        <div class="backimg" onclick="content_3()" id="box3">
+            <div class="box">
+                <p class="title">第四次作业</p><br/>
+                <p class="date">2019年7月11号凌晨</p>
+                <hr><br/>
+                <p class='preview'>作业第一部分其实可以直接用 nginx 来实现，但是要求要写 koa 或 express 所以就用
+                    koa 简单实现了一下。....</p>
+            </div>
+        </div>
+        <div class="details_hidden" id="details3">
+            <div class="details_box">
+                <p class="title">第四次作业</p><br/>
+                <p class="date">2019年7月11号凌晨</p>
+                <hr>
+                <br/>
+                <p>
+                    <p class='text'> 作业第一部分其实可以直接用 nginx 来实现，但是要求要写 koa 或 express 所以就用
+                        koa 简单实现了一下。
+                    </p>
+                    <br/>
+                    <p class='text'>第二部分采用 express 和 connect-multiparty 中间件来实现，实现四个函数分别对应不
+                        同的请求。
+                        服务器端采用 nginx 做了代理。
+                    </p>
+                    
+                    <br/>
+                    <p class="text">这次作业难点在于第二部分，之前只采用过 python 的 django 框架搭建过后端，对于
+                        这方面还算较为了解，但是采用 koa 或者 express 搭建还是第一次，对于其中涉及到的各
+                        种传输格式也有了一定的了解，也初步认识到了 express 中中间件的使用。
+                    </p>
+                    <br/>
+            </div>
+            <div class="return" onclick="returnlist()">
+                返回
+            </div>
+        </div>
     </div>
+
+    
+</div>
 
 
     <script>
         function content() {
             document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
             document.getElementById("details1").classList.replace("details_hidden", "details");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
@@ -178,15 +218,26 @@
         function content_2() {
             document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
             document.getElementById("details2").classList.replace("details_hidden", "details");
+            parent.resizeIframe(parent.document.getElementById("iframe1"));
+        }
+
+        function content_3() {
+            document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("details3").classList.replace("details_hidden", "details");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
 
         function returnlist() {
             document.getElementById("box1").classList.replace("backimg_hidden", "backimg");
             document.getElementById("box2").classList.replace("backimg_hidden", "backimg");
+            document.getElementById("box3").classList.replace("backimg_hidden", "backimg");
             document.getElementById("details1").classList.replace("details", "details_hidden");
             document.getElementById("details2").classList.replace("details", "details_hidden");
+            document.getElementById("details3").classList.replace("details", "details_hidden");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
 
