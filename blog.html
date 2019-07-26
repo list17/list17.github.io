@@ -200,6 +200,42 @@
                 返回
             </div>
         </div>
+
+
+        <div class="backimg" onclick="content_4()" id="box4">
+            <div class="box">
+                <p class="title">综合实验</p><br/>
+                <p class="date">2019年7月26号晚</p>
+                <hr><br/>
+                <p class='preview'> 戏设计灵感来自著名游戏《FlappyBird》，在其原有的点击跳跃并自由落体的基础上加入多种道具、定期发射的飞镖以及联机对战的元素以增加游戏的趣味性和互动性。......
+                </p>
+            </div>
+        </div>
+        <div class="details_hidden" id="details4">
+            <div class="details_box">
+                <p class="title">综合实验</p><br/>
+                <p class="date">2019年7月26号晚</p>
+                <hr>
+                <br/>
+                <p>
+                    <p class='text'> 戏设计灵感来自著名游戏《FlappyBird》，在其原有的点击跳跃并自由落体的基础上加入多种道具、定期发射的飞镖以及联机对战的元素以增加游戏的趣味性和互动性。
+                    </p>
+                    <br/>
+                    <p class='text'>但是感觉联机游戏是一个大坑，为了实现联机，修改了无数次方案，最终才确定为现在的状况。
+                    </p>
+                    <br/>
+                    <p class="text">首先是帧同步技术。将50ms内的操作发送到服务器，50ms之后服务器会同时向两台手机发送消息，手机接收到消息之后才会进行指令。也就是当你按下的那一瞬间并不会操作你的人物产生动作，而只是向服务器发送了消息请求，之后再从服务器接收到消息再进行操作。
+                    </p>
+                    <p class="text">
+                        碰撞检测变为每台手机只检测自己的碰撞，而对手的碰撞检测依靠对手发送消息实现，这样的话自己的操作可以得到保障，对手的操作也可以得到保障，同时减轻了房主手机运算的压力，效果还算令人满意
+                    </p>
+                </p>
+            </div>
+            <div class="return" onclick="returnlist()">
+                返回
+            </div>
+        </div>
+
     </div>
 
     
@@ -211,6 +247,7 @@
             document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box4").classList.replace("backimg", "backimg_hidden");
             document.getElementById("details1").classList.replace("details_hidden", "details");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
@@ -219,6 +256,7 @@
             document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box4").classList.replace("backimg", "backimg_hidden");
             document.getElementById("details2").classList.replace("details_hidden", "details");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
@@ -227,7 +265,17 @@
             document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
             document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box4").classList.replace("backimg", "backimg_hidden");
             document.getElementById("details3").classList.replace("details_hidden", "details");
+            parent.resizeIframe(parent.document.getElementById("iframe1"));
+        }
+
+        function content_4() {
+            document.getElementById("box1").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box2").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box3").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("box4").classList.replace("backimg", "backimg_hidden");
+            document.getElementById("details4").classList.replace("details_hidden", "details");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
 
@@ -235,9 +283,11 @@
             document.getElementById("box1").classList.replace("backimg_hidden", "backimg");
             document.getElementById("box2").classList.replace("backimg_hidden", "backimg");
             document.getElementById("box3").classList.replace("backimg_hidden", "backimg");
+            document.getElementById("box4").classList.replace("backimg_hidden", "backimg");
             document.getElementById("details1").classList.replace("details", "details_hidden");
             document.getElementById("details2").classList.replace("details", "details_hidden");
             document.getElementById("details3").classList.replace("details", "details_hidden");
+            document.getElementById("details4").classList.replace("details", "details_hidden");
             parent.resizeIframe(parent.document.getElementById("iframe1"));
         }
 
